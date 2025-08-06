@@ -1,0 +1,272 @@
+
+/* ================== VARIABLES ================== */
+:root {
+  --color-principal: rgb(192, 216, 238);
+  --color-acento: rgb(26, 188, 156);
+  --color-claro: rgb(255, 255, 255);
+  --color-azul: rgb(52, 152, 219);
+  --color-fondo: rgb(249, 249, 249);
+  --color-sombra: rgba(196, 231, 213, 0.326);
+
+  --font-base: 16px;
+  --font-family: 'Segoe UI', 'Inter', 'Libertinus Math', sans-serif;
+}
+
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  background: url('./imgs/fondo.tecnop.jpg') center/cover no-repeat var(--color-fondo);
+  color: #e39494;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ================== ENCABEZADO Y NAVEGACIÓN ================== */
+.index-header {
+  background-color: var(--color-principal);
+  color: var(--color-claro);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.index-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--color-claro);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: var(--color-acento);
+  outline: none;
+}
+
+/* ================== CONTENIDO PRINCIPAL ================== */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h1, main h2 {
+  color: var(--color-principal);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main h1 {
+  font-size: 2.3rem;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  border-left: 4px solid var(--color-acento);
+  padding-left: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-acento);
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+}
+
+/* ================== GALERÍA ================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--color-sombra);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover,
+.galeria img:focus {
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* ================== FORMULARIO ================== */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--color-claro);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px var(--color-sombra);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--color-acento);
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
+}
+
+form button[type="submit"] {
+  background-color: var(--color-acento);
+  color: var(--color-claro);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover,
+form button[type="submit"]:focus {
+  background-color: #16a085;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* ================== PIE DE PÁGINA ================== */
+footer {
+  background-color: var(--color-principal);
+  color: var(--color-claro);
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer .redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .redes-sociales img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--color-sombra);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .redes-sociales img:hover,
+footer .redes-sociales img:focus {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .index-header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h2 {
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1rem;
+  }
+
+  .tecnologias img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-header h1 {
+    font-size: 1.4rem;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main h2 {
+    font-size: 1.3rem;
+  }
+
+  .galeria {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  footer .redes-sociales img {
+    width: 35px;
+    height: 35px;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  .map-link {
+    width: 100%;
+  }
+}
