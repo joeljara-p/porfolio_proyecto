@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Mi Sitio Web</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Libertinus+Math&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logo + Título -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imgn/logo-empresa.png" alt="Logo de la empresa" width="50" height="50" class="rounded-circle me-2">
+        <span>Negocios Modernos</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================== HEADER ======================== -->
+  <header class="index-header text-center py-4 text-white bg-primary">
+    <div class="container">
+      <h1 class="mb-0">Desarrollo Full Stack y Marketing</h1>
+    </div>
+  </header>
+
+  <!-- ======================== MAIN CONTENT ======================== -->
+  <main class="container my-5">
+    <h2 class="text-center">Bienvenido</h2>
+    <p class="text-justify">
+      Lleva tu negocio al siguiente nivel en el mundo digital con una página web. Negocios Modernos ofrece soluciones integrales para la creación y mantenimiento de páginas web eficientes y atractivas.
+    </p>
+    <p>
+      Hemos desarrollado una plataforma administradora de contenidos única en el mercado, que te facilitará editar tu página en colaboración con nosotros y al mismo tiempo nos permite brindarte soporte técnico directo y rápido cuando lo necesites.
+    </p>
+    <p>
+      Con nuestra plataforma hemos creado más de 2.000 páginas web, que han ayudado a nuestros clientes a conseguir resultados reales a través de Internet.
+    </p>
+
+    <!-- Lista de servicios -->
+    <h2 class="mt-5">Nuestro servicio de creación de páginas web incluye:</h2>
+    <ul class="list-group list-group-flush mb-5">
+      <li class="list-group-item">Diseño de sitio web e instalación de hosting, dominios .CL y correos corporativos.</li>
+      <li class="list-group-item">Asesoría humana directa por WhatsApp en todo el proceso de creación y mantenimiento de tu sitio.</li>
+      <li class="list-group-item">Integración de Transbank y solicitud de código de comercio para pagos online.</li>
+      <li class="list-group-item">Sección de blog para publicaciones de contenido.</li>
+      <li class="list-group-item">Formulario de cotización o contacto.</li>
+      <li class="list-group-item">Creación de productos y servicios.</li>
+      <li class="list-group-item">Galerías de fotos en la web.</li>
+      <li class="list-group-item">Usuario y contraseña para editar información.</li>
+      <li class="list-group-item">Sitio administrable con asesoría permanente de un ejecutivo.</li>
+    </ul>
+
+    <!-- Carrusel de tecnologías -->
+    <section class="tecnologias text-center my-5">
+      <h3 class="mb-4">Tecnologías que usamos</h3>
+
+      <div id="iconCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-3">
+              <div class="col-4 col-md-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="img-fluid" alt="Logo de HTML5" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="img-fluid" alt="Logo de CSS3" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="img-fluid" alt="Logo de JavaScript" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="img-fluid" alt="Logo de React" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-3">
+              <div class="col-4 col-md-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" class="img-fluid" alt="Logo de WordPress" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" class="img-fluid" alt="Icono de Google Ads" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="img-fluid" alt="Icono de Meta Ads" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-3">
+              <div class="col-4 col-md-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" class="img-fluid" alt="Icono de Google Analytics" />
+              </div>
+              <div class="col-4 col-md-2">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968872.png" class="img-fluid" alt="Icono de Mailchimp" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#iconCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#iconCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-2">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://www.instagram.com/joeljara_HP" target="_blank" aria-label="Instagram de Joel">
+        <img src="./imgn/logointagram.jpg" alt="Logo de Instagram" width="40" height="40" style="border-radius: 10px;">
+      </a>
+      <a href="https://wa.me/56998641246" target="_blank" aria-label="WhatsApp de Joel">
+        <img src="./imgn/logowatsapp.jpg" alt="Logo de WhatsApp" width="40" height="40" style="border-radius: 10px;">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
