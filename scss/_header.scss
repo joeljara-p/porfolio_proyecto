@@ -1,0 +1,41 @@
+.index-header {
+  background-color: $color-principal;
+  color: $color-claro;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+
+  li a {
+    color: $color-claro;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $color-acento;
+      outline: none;
+    }
+  }
+}

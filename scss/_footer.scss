@@ -1,0 +1,30 @@
+footer {
+  background-color: $color-principal;
+  color: $color-claro;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px $color-sombra;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        outline: none;
+      }
+    }
+  }
+}

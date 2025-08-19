@@ -1,0 +1,40 @@
+// Tablet
+@include respond(tablet) {
+  .index-header h1 { font-size: 1.7rem; }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    p { font-size: 1rem; }
+  }
+
+  .tecnologias img { width: 50px; }
+}
+
+// Phone
+@include respond(phone) {
+  .index-header h1 { font-size: 1.4rem; }
+
+  main {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.3rem; }
+  }
+
+  .galeria {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  footer .redes-sociales img {
+    width: 35px;
+    height: 35px;
+  }
+
+  form { padding: 1.5rem; }
+  .map-link { width: 100%; }
+}
