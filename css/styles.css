@@ -1,7 +1,7 @@
 body {
-  background: url("../imgs/fondo.tecnop.jpg") center/cover no-repeat rgb(249, 249, 249);
   min-height: 100vh;
   overflow-x: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../imgs/fondo.tecnop.jpg") center/cover no-repeat rgb(249, 249, 249);
 }
 
 * {
@@ -13,39 +13,14 @@ body {
 body {
   font-family: "Segoe UI", "Inter", "Libertinus Math", sans-serif;
   font-size: 16px;
-  color: #e39494;
+  color: black;
   line-height: 1.6;
-  min-height: 100vh;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Segoe UI", "Inter", "Libertinus Math", sans-serif;
-  color: rgb(192, 216, 238);
-  margin-bottom: 1.5rem;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  text-align: justify;
-  color: black;
 }
 
 img {
@@ -60,8 +35,22 @@ a {
   transition: color 0.3s;
 }
 a:hover, a:focus {
-  color: rgb(26, 188, 156);
+  color: rgb(23, 196, 161);
   outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", "Inter", "Libertinus Math", sans-serif;
+  color: rgb(192, 216, 238);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: black;
+  font-weight: 700;
 }
 
 .index-header {
@@ -93,12 +82,12 @@ nav ul {
 }
 nav ul li a {
   color: rgb(255, 255, 255);
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
   transition: color 0.3s;
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: rgb(26, 188, 156);
+  color: rgb(23, 196, 161);
   outline: none;
 }
 
@@ -117,17 +106,11 @@ main h1 {
 }
 main h2 {
   font-size: 1.8rem;
-  border-left: 4px solid rgb(26, 188, 156);
-  padding-left: 10px;
+  border-left: 4px solid rgb(23, 196, 161);
+  padding-left: 0.625rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: rgb(26, 188, 156);
-}
-main p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  text-align: justify;
-  color: black;
+  color: rgb(23, 196, 161);
 }
 
 .galeria {
@@ -161,8 +144,7 @@ form label {
   font-weight: 600;
   color: #333;
 }
-form input,
-form textarea {
+form input, form textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ccc;
@@ -171,14 +153,13 @@ form textarea {
   margin-bottom: 1.5rem;
   transition: border-color 0.3s;
 }
-form input:focus,
-form textarea:focus {
-  border-color: rgb(26, 188, 156);
+form input:focus, form textarea:focus {
+  border-color: rgb(23, 196, 161);
   outline: none;
   box-shadow: 0 0 5px rgba(26, 188, 156, 0.3);
 }
 form button[type=submit] {
-  background-color: rgb(26, 188, 156);
+  background-color: rgb(23, 196, 161);
   color: rgb(255, 255, 255);
   padding: 0.75rem 2rem;
   border: none;

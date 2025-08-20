@@ -1,4 +1,3 @@
-// Tablet
 @include respond(tablet) {
   .index-header h1 { font-size: 1.7rem; }
 
@@ -16,7 +15,6 @@
   .tecnologias img { width: 50px; }
 }
 
-// Phone
 @include respond(phone) {
   .index-header h1 { font-size: 1.4rem; }
 

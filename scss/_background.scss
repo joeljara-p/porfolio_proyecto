@@ -1,6 +1,5 @@
-// 🎨 Fondo principal del sitio
 body {
-  background: url('../imgs/fondo.tecnop.jpg') center/cover no-repeat $color-fondo;
   min-height: 100vh;
   overflow-x: hidden;
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../imgs/fondo.tecnop.jpg') center/cover no-repeat $color-fondo;
 }
